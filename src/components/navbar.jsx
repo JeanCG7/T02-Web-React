@@ -4,7 +4,7 @@ import {Nav, Navbar, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 export default class Menu extends Component {
   render() {
     return (
-      <div>
+      <section id='navBar'>
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
@@ -38,7 +38,7 @@ export default class Menu extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-      </div>
+      </section>
     );
   }
 }

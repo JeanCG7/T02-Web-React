@@ -5,7 +5,7 @@ export default class About extends Component {
 
     render() {
         return (
-            <div className='container-about'>
+            <section id='about' className='container-about'>
                 <Row>
                     <Col lg={7} md={7} sm={12} xs={12}>
                         <Image src={require('../imgs/eu.jpg')} circle width={200}></Image>
@@ -31,9 +31,9 @@ export default class About extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={4} md={4} sm={6} xs={12}>
+                    <Col lg={3} md={3} sm={6} xs={12}>
                         <h2>
-                            Área de foco
+                            Interesses
                         </h2>
                         <ul>
                             <li>Gestão de projetos</li>
@@ -41,20 +41,28 @@ export default class About extends Component {
                             <li>Desenvolvimento Web</li>
                         </ul>
                     </Col>
-                    <Col lg={4} md={4} sm={6} xs={12}>
+                    <Col lg={3} md={3} sm={6} xs={12}>
                         <h2>
-                            Educação
+                            Idiomas
+                        </h2>
+                        <ul>
+                            <li>Português Nativo</li>
+                            <li>Inglês Avançado</li>
+                        </ul>
+                    </Col>
+                    <Col lg={3} md={3} sm={6} xs={12}>
+                        <h2>
+                            Formação
                         </h2>
                         <ul>
                             <li>Engenharia de Software - UTFPR - Cornélio/PR</li>
                             <li>Técnico em Informática - ETEC - Assis/SP</li>
                             <li>Ensino Médio- ETEC - Assis/SP</li>
-                            <li>Inglês Intermediário-Avançado</li>
                         </ul>
                     </Col>
-                    <Col lg={4} md={4} sm={6} xs={12}>
+                    <Col lg={3} md={3} sm={6} xs={12}>
                         <h2>
-                            Experiência & Eventos
+                            Atividades Desenvolvidas & Experiência
                         </h2>
                         <ul>
                             <li>1 ano e 6 meses - Estagiário - Universidade Aberta do Brasil - Tarumã/SP</li>
@@ -65,7 +73,8 @@ export default class About extends Component {
                         </ul>
                     </Col>
                 </Row>
-            </div>
+
+            </section>
         )
     }
 }
