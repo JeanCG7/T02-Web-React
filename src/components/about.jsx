@@ -1,40 +1,46 @@
 import React, { Component } from 'react'
-import { Image, Row, Col } from 'react-bootstrap'
+import { Image, Row, Col, Button } from 'react-bootstrap'
 
 export default class About extends Component {
 
     render() {
         return (
-            <section id='about' className='container-about'>
+            <section id='about' className='container about'>
                 <Row>
-                    <Col lg={7} md={7} sm={12} xs={12}>
+                    <Col lg={3} md={3} sm={3} xs={12}>
                         <Image src={require('../imgs/eu.jpg')} circle width={200}></Image>
+                        <Button className='button' href={require('../files/jeanCurriculo.pdf')} target='_blank' download>Baixar Currículo</Button>
+
+                    </Col>
+                    <Col lg={9} md={9} sm={9} xs={12}>
                         <p className='about'>
                             Meu nome é Jean Carlos Gonçalves, atualmente trabalho com desenvolvimento WEB
                             no Grupo Forlogic e curso o 6º período de Engenharia de Software. Sou natural de Tarumã- SP
                             e atualmente moro em Cornélio Procópio - PR
                         </p>
-                    </Col>
-                    <Col lg={5} md={5} sm={12} xs={12}>
                         <p>Sempre gostei de enfrentrar desafios e descobrir coisas novas, aqui estão algumas tecnologias que aprendi saciando tal desejo!</p>
-                        <Image src={require('../imgs/html.png')}></Image>
-                        <Image src={require('../imgs/css.png')}></Image>
-                        <Image src={require('../imgs/node.png')}></Image>
-                        <Image src={require('../imgs/angular.png')}></Image>
-                        <Image src={require('../imgs/react.png')}></Image>
-                        <Image src={require('../imgs/java.png')}></Image>
-                        <Image src={require('../imgs/cSharp.png')}></Image>
-                        <Image src={require('../imgs/dotNet.png')}></Image>
-                        <Image src={require('../imgs/mySql.png')}></Image>
-                        <Image src={require('../imgs/sqlServer.png')}></Image>
-
                     </Col>
                 </Row>
-                <Row>
+                <h2>Conhecimento e Interesses</h2>
+                <Row className='icons'>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/html.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/css.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/node.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/angular.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/react.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/fireBase.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/mySql.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/mongo.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/java.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/cSharp.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/dotNet.png')}></Image></Col>
+                    <Col lg={1} md={2} sm={3} xs={4}><Image src={require('../imgs/sqlServer.png')}></Image></Col>
+                </Row>
+                <Row className='info'>
                     <Col lg={3} md={3} sm={6} xs={12}>
-                        <h2>
+                        <h3>
                             Interesses
-                        </h2>
+                        </h3>
                         <ul>
                             <li>Gestão de projetos</li>
                             <li>Liderança de times</li>
@@ -42,18 +48,18 @@ export default class About extends Component {
                         </ul>
                     </Col>
                     <Col lg={3} md={3} sm={6} xs={12}>
-                        <h2>
+                        <h3>
                             Idiomas
-                        </h2>
+                        </h3>
                         <ul>
                             <li>Português Nativo</li>
                             <li>Inglês Avançado</li>
                         </ul>
                     </Col>
                     <Col lg={3} md={3} sm={6} xs={12}>
-                        <h2>
+                        <h3>
                             Formação
-                        </h2>
+                        </h3>
                         <ul>
                             <li>Engenharia de Software - UTFPR - Cornélio/PR</li>
                             <li>Técnico em Informática - ETEC - Assis/SP</li>
@@ -61,9 +67,9 @@ export default class About extends Component {
                         </ul>
                     </Col>
                     <Col lg={3} md={3} sm={6} xs={12}>
-                        <h2>
+                        <h3>
                             Atividades Desenvolvidas & Experiência
-                        </h2>
+                        </h3>
                         <ul>
                             <li>1 ano e 6 meses - Estagiário - Universidade Aberta do Brasil - Tarumã/SP</li>
                             <li>9 meses - Analista de Suporte - VSM Ouro&Farma - Assis/SP</li>

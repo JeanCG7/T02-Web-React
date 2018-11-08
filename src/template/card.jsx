@@ -6,11 +6,11 @@ import {
 
 export default props => (
     <Card className={props.className}>
-      <a href={props.link}><CardImg top width={props.imgWidth} src={props.src} alt={props.alt}/></a>
+      <a target='_blank' href={props.link}><CardImg top width='100%' height='300px' src={props.src} alt={props.alt}/></a>
       <CardBody>
-        <CardTitle>{props.title}</CardTitle>
-        <CardSubtitle>{props.subTitle}</CardSubtitle>
-        <CardText>{props.text}</CardText>
+        <CardTitle className='title'>{props.title}</CardTitle>
+        <CardSubtitle className='subTitle'>{props.subTitle}</CardSubtitle>
+        <CardText className='text'>{props.text}</CardText>
       </CardBody>
     </Card>
 );

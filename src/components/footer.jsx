@@ -3,7 +3,7 @@ import { Row, Grid, Image } from 'react-bootstrap'
 
 export default props => (
     <section id='footer'>
-        <Grid>
+        <div>
             <Row>
                 Jean Carlos Gonçalves
             </Row>
@@ -14,8 +14,10 @@ export default props => (
                 +55 (18) 99694-6472
             </Row>
             <Row>
-                <Image></Image>
+                <a target='_blank' href='https://github.com/JeanCG7?tab=repositories'><Image src={require('../imgs/git.png')}></Image></a>
+                <a target='_blank' href='https://www.facebook.com/JeanJCG'><Image src={require('../imgs/fb.png')}></Image></a>
+                <a target='_blank' href='https://www.linkedin.com/in/jeanjcg/'><Image src={require('../imgs/ln.png')}></Image></a>
             </Row>
-        </Grid>
+        </div>
     </section>
 );
